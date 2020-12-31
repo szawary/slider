@@ -5,6 +5,12 @@
     --img__footer--height: 35px;
     --img__aside--width:35px;
     --padding: 1rem;
+    --picture1: url('/assets/img/1.jpg');
+    --picture2: url('/assets/img/2.jpg');
+    --picture3: url('/assets/img/3.jpg');
+    --picture4: url('/assets/img/4.jpg');
+    --picture5: url('/assets/img/5.jpg');
+    --picture6: url('/assets/img/6.jpg');
 }
 
 * {
@@ -16,7 +22,7 @@
 /* IMG CONTAINER */
 
 .img__container {
-    background-image: url('../img/12336.jpg');
+    background-image: var(--picture1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -30,7 +36,7 @@
     height: var(--img__header--height);
     justify-content:left;
     padding: var(--padding);
-    opacity: 30%;
+    opacity: 60%;
 }
 
 .img__main {
@@ -48,7 +54,7 @@
     height: var(--img__footer--height);
     justify-content: center;
     padding: var(--padding);
-    opacity: 30%;
+    opacity: 60%;
 }
 
 .img__aside-left, .img__aside-right {
