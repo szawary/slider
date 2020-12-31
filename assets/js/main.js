@@ -33,8 +33,8 @@ function clickBtnPicture(btn, picNumber, captionText, headerPicCounter) {
         document.querySelector('.img__container').style.backgroundImage = `${picNumber}`;
         document.querySelector('.captionText').textContent = captionText;
         document.querySelector('.headerPicCounter').textContent = headerPicCounter;
-        btn.classList.toggle('activeDot');
-        btn.classList.remove('inactiveDot')
+        document.querySelector('.activeDot').classList.replace('activeDot', 'inactiveDot');
+        btn.classList.replace('inactiveDot', 'activeDot');
     });
 };
 
